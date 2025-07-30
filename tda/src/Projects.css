@@ -1,0 +1,13 @@
+.project_container{
+    background-color: rgb(79, 79, 183);
+}
+.projects_main_container{
+    height: 100vh;
+}
+.project_heading{
+    text-align: center;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-top: 20px;
+}

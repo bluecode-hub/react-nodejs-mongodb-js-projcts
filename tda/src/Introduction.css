@@ -1,0 +1,105 @@
+.about_brief {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+ background-color: rgb(38, 64, 150);
+  font-size: 1.2rem;
+  margin-top: 0;
+  padding-top: 0;
+  
+}
+
+.about_h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+   
+}
+
+.about_p {
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  flex: 1;
+}
+
+.about_pic {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.events{
+  background-color: rgb(16, 60, 125);
+  text-align: center;
+  width: 100%;
+
+}
+.main_title{
+  color:azure;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+
+  
+}
+.cards_grid_home {
+  display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+/* ✅ Updated card style (applies to both card_1 and card_2) */
+.cards_home_1 {
+  background: linear-gradient(to bottom right, rgba(168, 155, 240, 0.9), rgba(255, 255, 255, 0.7));
+  border-radius: 15px;
+  width: 100%;
+  max-width: 280px;
+  padding: 20px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.cards_home_1:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom right, rgba(169, 204, 230, 0.9), rgba(255, 255, 255, 0.6));
+}
+
+
+.card_home_heading {
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  color: hsl(240, 25%, 46%);
+}
+
+.card_home_content {
+  font-size: 1.1rem;
+  color: #333;
+}
+.card_photo{
+  contain: fit;
+  width: 200px;
+  height:120px;
+
+}
+
+

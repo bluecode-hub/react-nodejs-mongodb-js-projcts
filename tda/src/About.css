@@ -1,0 +1,43 @@
+.about_page {
+  background-color: rgb(81, 81, 179);
+}
+
+.about_section {
+  background-color: rgb(81, 81, 179);
+  height: 100vh;
+  padding: 40px;
+}
+
+.about_heading {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+.about_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto; /* Centers the whole content block */
+}
+
+.about_image {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.about_paragraph {
+  color: azure;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 500px;
+  text-align: justify;
+}
+

@@ -1,0 +1,56 @@
+.events_page {
+  text-align: center;
+  background-color: hsl(240, 81%, 30%);
+  height: 100%;
+ 
+  box-sizing: border-box;
+}
+
+.events_heading {
+  color: white;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+/* ✅ NEW: Grid container for cards */
+.cards_grid {
+  display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+/* ✅ Updated card style (applies to both card_1 and card_2) */
+.card_1, .card_2 ,.card_3,.card_4,.card_5{
+   background: linear-gradient(to bottom right, #a89bf0, #f2f2f2);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 280px;
+  padding: 20px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card_1:hover, .card_2:hover,.card_3:hover,.card_4:hover,.card_5:hover {
+   transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom right, #a9cce6, #fff);
+}
+
+.card_heading {
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+  color: hsl(240, 25%, 46%);
+}
+
+.card_content {
+  font-size: 1.1rem;
+  color: #333;
+}

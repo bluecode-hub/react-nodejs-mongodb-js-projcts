@@ -1,0 +1,111 @@
+.hero_section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 0;
+    justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.banner_photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity:90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.TDA {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.hero_content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  text-align: center;
+  font-size: 70px;
+  color: azure;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1s;
+  margin-top: 10px;
+}
+
+.hero_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  margin-top: 40px;
+  font-size: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 2s;
+}
+
+.hero_button_1,
+.hero_button_2 {
+    position:relative;
+    backdrop-filter: blur(10px);
+    padding: 1rem 2.5rem;
+
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: aliceblue;
+  background-color: hsla(240, 89%, 7%, 0.5);
+  
+  border: none;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 0 15px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.hero_button_2 {
+    
+  color: white;
+}
+
+.hero_button_1:hover,
+.hero_button_2:hover {
+  background-color: hsla(240, 89%, 7%, 0.3);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
